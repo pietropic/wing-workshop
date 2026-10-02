@@ -1,0 +1,106 @@
+% Winter Geometry Workshop 2026 — poster
+% Compile with: pdflatex WinG-Poster.tex
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[margin=18mm,top=16mm,bottom=14mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{charter}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{hyperref}
+
+\definecolor{ink}{HTML}{16232E}
+\definecolor{ice}{HTML}{6E9CBC}
+\definecolor{paleice}{HTML}{C3D7E3}
+
+\hypersetup{colorlinks=true, urlcolor=ice, pdftitle={Winter Geometry Workshop 2026},
+            pdfauthor={Pietro Mesquita-Piccione}}
+
+\pagestyle{empty}
+\color{ink}
+\setlength{\parindent}{0pt}
+
+% ---- the ornament: a piecewise-linear (tropical) curve ----------------------
+\newcommand{\ornament}{%
+\begin{tikzpicture}
+  \clip (0,0) rectangle (17.4,4.4);
+  \begin{scope}[line width=0.7pt, ice]
+    % rays
+    \draw (4.2,2.4) -- (-1.5,0.1);
+    \draw (4.2,2.4) -- (3.1,5.2);
+    \draw (7.1,1.5) -- (6.4,-1.2);
+    \draw (10.3,2.9) -- (10.9,5.4);
+    \draw (13.1,1.7) -- (12.2,-1.0);
+    \draw (13.1,1.7) -- (18.6,3.3);
+    % bounded edges
+    \draw (4.2,2.4) -- (7.1,1.5) -- (10.3,2.9) -- (13.1,1.7);
+  \end{scope}
+  \foreach \p in {(4.2,2.4),(7.1,1.5),(10.3,2.9),(13.1,1.7)}
+    \fill[ice] \p circle (2.1pt);
+\end{tikzpicture}}
+
+\begin{document}
+
+{\color{paleice}\rule{\linewidth}{1.2pt}}
+
+\vspace{6mm}
+
+{\fontsize{13}{16}\selectfont University of Gothenburg and Chalmers University of Technology}
+
+\vspace{9mm}
+
+{\fontsize{40}{46}\selectfont\bfseries Winter Geometry\\[2mm] Workshop}
+
+\vspace{7mm}
+
+{\fontsize{20}{24}\selectfont\color{ice} 9--11 December 2026}
+
+\vspace{4mm}
+
+{\fontsize{13}{17}\selectfont Department of Mathematical Sciences, Chalmers Tvärgata 3, Gothenburg}
+
+\vspace{6mm}
+
+\ornament
+
+\vspace{4mm}
+
+{\fontsize{13.5}{18}\selectfont A three-day meeting on complex geometry, from pluripotential theory to canonical metrics and K-stability, with links to mathematical physics.}
+
+\vfill
+
+{\fontsize{16}{19}\selectfont\bfseries Speakers}
+
+\vspace{3mm}
+
+{\fontsize{13.5}{20}\selectfont
+\begin{minipage}[t]{0.48\linewidth}
+Robert Berman \textit{(TBC)}\\
+Bo Berndtsson\\
+Sébastien Boucksom\\
+Yifan Chen\\
+Ruadhaí Dervan \textit{(TBC)}\\
+Siarhei Finski
+\end{minipage}%
+\begin{minipage}[t]{0.48\linewidth}
+Henri Guenancia\\
+Hans-Joachim Hein\\
+Semyon Klevtsov\\
+Chi Li\\
+Rémi Reboulet \textit{(TBC)}
+\end{minipage}}
+
+\vfill
+
+{\color{paleice}\rule{\linewidth}{0.6pt}}
+
+\vspace{4mm}
+
+{\fontsize{12.5}{17}\selectfont
+Registration is free and open until 9 October 2026 at \texttt{WEBSITE}.\\
+Organized by Pietro Mesquita-Piccione. Questions to \texttt{EMAIL@gu.se}.\\[2mm]
+{\color{ice}Supported by Wilhelm och Martina Lundgrens Vetenskapsfond.}}
+
+\end{document}
