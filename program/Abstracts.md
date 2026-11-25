@@ -18,3 +18,11 @@ More precisely, for a compact subset of a complex manifold, consider the continu
 *abstract:* I will discuss recent work on the classification of compact Kähler surfaces with semipositive anticanonical bundle. In particular, we prove that the blowup of projective plane at any nine points on a smooth cubic is one of them, answering a question of Demailly–Peternell–Schneider. I will explain how cylindrical geometry on a punctured neighborhood of an anticanonical elliptic curve gives a pluriharmonic function with logarithmic growth, and hence the semipositive Hermitian metric on the anticanonical bundle. This is joint work with Simion Filip, Song Sun, Valentino Tosatti, and Junsheng Zhang.
 
 ---
+
+**Bo Berndtsson** *slides*
+
+*title:* Ehrhart's volume conjecture - reading AI-generated proofs.
+
+*abstract:* Ehrhart's volume conjecture from 1967 was recently proved by Open AI and Antrophic in two separate articles. In the lecture I will state and motivate the conjecture, briefly discuss the proof(s), and conclude with some reflections on AI-generated articles versus texts written by humans. Time permitting, I will also show a funny picture.
+
+---
